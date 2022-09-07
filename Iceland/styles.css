@@ -1,13 +1,19 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: #fcfcfd;
     margin: auto 40px auto 40px;
     padding: 20px 35px 20px 35px;
   }
+  header {
+      width:100%;
+      margin: auto;
+      background-color: #333333;
+      z-index: 2;
+  }
   #nav-bar {
     position: fixed;
-    width: 35%;
-    right: 4%;
-    top: 2.4%;
     overflow: hidden;
     background-color: #333333;
     color: #ffffff;
@@ -87,32 +93,65 @@ body {
   }
   .main-info {
       text-align: center;
+      margin: auto 40px auto 40px;
+      padding: 20px 35px 20px 35px;
+      display: block;
   }
 
-  #destinations div {
+  #destinations {
+      margin: auto 40px auto 40px;
+      padding: 20px 35px 20px 35px;
+      width: 100%;
+  }
+  #destinations a {
     margin: 5px;
     float: left;
-    width: 240px;
+    width: 220px;
   }
   
-  #gallery div:hover {
+  #gallery a:hover {
     opacity: 50%;
   }
   
-  #gallery div img {
+  #gallery img {
     width: 100%;
     height: auto;
     border-radius: 5%;
+    z-index: -1;
+    display: block;
   }
   h2::first-letter {
     font-size: 2rem;
     color: rgb(20, 143, 102);
     margin-right: auto;
   }
-
-#pvideo {
-    text-align: center;
+#inspiration p {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
-#video {
-    display: flex;
+#pvideo {
+    margin: auto;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        justify-content: space-evenly;
+        grid-template-columns: 1fr;
+    }
+    header {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #gallery img{
+        align-items: center;
+        width: 100%;
+    }
 }
