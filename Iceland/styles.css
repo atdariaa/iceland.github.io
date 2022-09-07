@@ -1,10 +1,12 @@
 body {
     background-color: #fcfcfd;
+    margin: auto 40px auto 40px;
+    padding: 20px 35px 20px 35px;
   }
   #nav-bar {
     position: fixed;
     width: 35%;
-    right: 6%;
+    right: 4%;
     top: 2.4%;
     overflow: hidden;
     background-color: #333333;
@@ -41,14 +43,17 @@ body {
   a:active {
     color: rgb(20, 143, 102);
   }
-  h1, h3 {
+  h1 {
   text-align: center;
+  font-size: 7vw;
   }
 
   #image1 {
     max-width: 90%;
+    width: 90%;
     max-height: auto;
-    margin: auto;
+    padding: auto;
+    margin: auto 35px auto 35px;
     display: block;
     border-radius: 5%;
   }
@@ -58,23 +63,33 @@ body {
   #_5rules {
       display: block;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align:center;
+      margin-left: 200px;
     }
     #_5rules ul {
         list-style-type: decimal;
+    }
+    #_5rules li {
+        margin: 20px;
     }
   p {
       display: flex;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+    h2 {
+        font-size: 2.5vw;
+    }
   h3 {
       font-weight: bold;
-      color:rgb(130, 168, 80)
+      color:rgb(130, 168, 80);
+      text-align: center;
+      font-size: 2vw;
   }
   .main-info {
       text-align: center;
   }
 
-  #gallery div {
+  #destinations div {
     margin: 5px;
     float: left;
     width: 240px;
