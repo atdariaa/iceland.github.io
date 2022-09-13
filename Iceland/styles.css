@@ -17,6 +17,7 @@ body {
     overflow: hidden;
     background-color: #333333;
     color: #ffffff;
+    border-radius: 0.7em;
   }
   #list-bar {
     list-style-type: none;
@@ -79,7 +80,7 @@ body {
         margin: 20px;
     }
   p {
-      display: flex;
+      /*display: flex;*/
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     h2 {
@@ -95,13 +96,19 @@ body {
       text-align: center;
       margin: auto 40px auto 40px;
       padding: 20px 35px 20px 35px;
-      display: block;
+      display: block; 
+      
   }
 
   #destinations {
+      text-align: center;
       margin: auto 40px auto 40px;
       padding: 20px 35px 20px 35px;
       width: 100%;
+  }
+  #destinations p {
+    margin: auto 40px auto 40px;
+      padding: 20px 35px 20px 35px;
   }
   #destinations a {
     margin: 5px;
@@ -109,6 +116,9 @@ body {
     width: 220px;
   }
   
+  #gallery {
+    margin-bottom: 40px;
+  }
   #gallery a:hover {
     opacity: 50%;
   }
@@ -125,18 +135,27 @@ body {
     color: rgb(20, 143, 102);
     margin-right: auto;
   }
-#inspiration p {
+.pr {
+    display:grid;
+    justify-content: center;
+    grid-template-rows: auto;
+    align-items: center;/*
     margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    margin-right: auto;*/
 }
+/*#inspiration h2 {
+  text-align: center;
+  margin: auto 40px auto 40px;
+      padding: 20px 35px 20px 35px;
+
+}*/
 #pvideo {
     margin: auto;
     width: 100%;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 786px) {
     /* For mobile phones: */
     .grid-container {
         display: grid;
@@ -146,12 +165,37 @@ body {
         grid-template-columns: 1fr;
     }
     header {
+      position:fixed;
+      float: none;
+      width: 100vw;
+      text-align: left;
+      
+      /*
         float: none;
         display: block;
-        text-align: left;
+        text-align: left;*/
     }
     #gallery img{
-        align-items: center;
+        justify-content: center;
         width: 100%;
     }
+    #_5rules {
+      display: block;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align:center;
+      margin-left: auto;
+    }
+    #destinations {
+      text-align: center;
+      margin: auto;
+      padding: auto;
+      width: 100%;
+  }
+  #destinations a {
+    margin: 15px;
+    width: 100%;
+   }
+   #gallery {
+    margin-bottom: -40px;
+   }
 }
