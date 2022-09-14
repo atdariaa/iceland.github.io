@@ -3,6 +3,10 @@
 }
 body {
     background-color: #fcfcfd;
+    /*background: linear-gradient(
+      rgb(133, 189, 170),
+      #fcfcfd 
+    ); */
     margin: auto 40px auto 40px;
     padding: 20px 35px 20px 35px;
   }
@@ -11,6 +15,7 @@ body {
       margin: auto;
       background-color: #333333;
       z-index: 2;
+      margin-left: 35px;
   }
   #nav-bar {
     position: fixed;
@@ -51,6 +56,7 @@ body {
     color: rgb(20, 143, 102);
   }
   h1 {
+  margin-top: 45px;
   text-align: center;
   font-size: 7vw;
   }
@@ -70,7 +76,7 @@ body {
   #_5rules {
       display: block;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      text-align:center;
+      text-align:right;
       margin-left: 200px;
     }
     #_5rules ul {
@@ -117,7 +123,7 @@ body {
   }
   
   #gallery {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   #gallery a:hover {
     opacity: 50%;
@@ -169,12 +175,14 @@ body {
       float: none;
       width: 100vw;
       text-align: left;
+      margin: auto;
       
       /*
         float: none;
         display: block;
         text-align: left;*/
     }
+    
     #gallery img{
         justify-content: center;
         width: 100%;
